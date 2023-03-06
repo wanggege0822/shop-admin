@@ -18,11 +18,15 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: ['tsconfig.json']
+    project: [
+      'tsconfig.json',
+      'vite.config.ts'
+    ]
   },
   plugins: [
     'vue'
   ],
   rules: {
+    'vue/no-mutating-props': 'off'
   }
 }
